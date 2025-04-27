@@ -45,7 +45,7 @@ export const AuthRight = styled.div`
   background-color: #fff;
 `;
 
-export const InpBox = styled.div`
+export const InpBox = styled.div<{ $error?: boolean }>`
   width: 100%;
 
   & input {
@@ -55,7 +55,7 @@ export const InpBox = styled.div`
 
     padding: 10px 15px;
     border-radius: 6px;
-    border: 1px solid #dddfe2;
+    border: ${(props) => (props.$error ? "2px solid #f00" : "1px solid #ddd")};
   }
 `;
 
@@ -94,4 +94,11 @@ export const NewAccBtn = styled.div`
     color: #fff;
     background-color: #42b72a;
   }
+`;
+
+export const ErrorMsg = styled.p`
+  color: #f00;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
 `;
