@@ -13,12 +13,7 @@ import { MdDelete } from "react-icons/md";
 import { Line } from "../styles/authStyles";
 import { AiFillLike } from "react-icons/ai";
 import { IoIosShareAlt } from "react-icons/io";
-import { IPost } from "../interfaces/post";
-
-interface IPostProps {
-  post: IPost;
-  onDelete: (id: number) => void;
-}
+import { IPostProps } from "../interfaces/post";
 
 const Post = ({ post, onDelete }: IPostProps) => {
   const [count, setCount] = useState<number>(0);

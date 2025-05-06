@@ -1,4 +1,4 @@
-import { IPost } from "../pages/NewsFeed";
+import { IPost } from "./post";
 
 export interface IPostsProps {
   posts: IPost[];
