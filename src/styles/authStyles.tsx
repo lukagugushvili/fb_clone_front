@@ -62,7 +62,7 @@ export const InpBox = styled.div<{ $error?: boolean }>`
 export const Line = styled.div`
   width: 100%;
   height: 1px;
-  margin: 20px 16px;
+  margin: 20px 0;
   background-color: #dddfe2;
 `;
 

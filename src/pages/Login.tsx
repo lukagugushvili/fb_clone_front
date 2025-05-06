@@ -49,6 +49,10 @@ const Login = () => {
 
   const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
+
+    if (validateForm()) {
+      navigate("/news");
+    }
   };
 
   const handleNavigate = (e: React.MouseEvent<HTMLButtonElement>) => {

@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family: inherit;
 }
+
+body {
+  background-color: #f2f4f7;
+}
